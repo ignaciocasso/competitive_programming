@@ -29,6 +29,9 @@ int main(){
 
 			m++;
 			lado_derecho += m;
+
+			lado_izquierdo += 2*n + 1;
+			n++;
 		}
 	}
 }
