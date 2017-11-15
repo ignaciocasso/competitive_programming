@@ -14,7 +14,7 @@ int main() {
   for (int cases=0; cases<n_cases; cases++) {
 
     int mat[MAX_N][MAX_N] = { 0 }; // in the i-th iteration of the for below, math[j][k]=min {m | (m,k)-(i,j) are the upper left and lower
-    int max_area = 0;              // right corners of a rectangle of ones, or -1 if there are none of such rectangles.
+    int max_area = 0;              // right corners of a rectangle of ones}, or -1 if there are none of such rectangles.
     string row; getline(cin, row);
     for (int i=0; row != ""; getline(cin,row), i++) {
       int ones_in_a_row = 0;
