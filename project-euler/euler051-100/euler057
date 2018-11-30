@@ -1,0 +1,5 @@
+Se pueden calcular linealmente las 1000 primeras expansiones (si En es a/b,
+E(n+1) = (2*b+a)/(a+b). Comprobar la condición del enunciado es trivial.
+No dice si hay que simplificar o no, pero da igual, porque nunca van a ser
+simplificables ( mcd(2*b+a,b+a) = mcd(a,b), y mcd(3,2)=1 ) (he usado que
+mcd(x,y) = mcd(x-y,y) )

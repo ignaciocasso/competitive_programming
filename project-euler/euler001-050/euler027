@@ -1,0 +1,4 @@
+Criba de erastótenes para los primeros 2001000 numeros, y fuerza bruta es
+suficiente. No se me ocurre como optimizarlo asi de primeras, aparte de notar
+que el b tiene que ser primo, a impar, y podar polinomios que den numeros
+negativos

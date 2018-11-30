@@ -1,0 +1,2 @@
+8*9! = 2903040 es una cota, ya que sum n con k digitos <=  k*9! < 10^(k-1)
+<= n con k digitos. Sabiendo esto, fuerza bruta es suficiente.

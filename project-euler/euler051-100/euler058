@@ -1,0 +1,5 @@
+n layers, n odd -> last element is n^2
+diagonals will be m^2 - k(m-1), m=1,...,n  k=0,1,2,3
+Loop n with two counters untill 10% is reached. There are only 2n-1 primes
+to check, so probably better to do it directly than to precalculate all primes
+below n^2 (and also we don't have a bound)

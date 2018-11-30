@@ -1,0 +1,5 @@
+A farey sequence is the sorted list of all proper reduced fraction with
+denominator lower than N and between 0 and 1.
+If a/b and c/d are next to each other in a Farey sequence, then ad-bc=1 and
+the fraction between both with lower denominator is (a+c)/(b+d).
+It also works the other way, if N is max(b,d)

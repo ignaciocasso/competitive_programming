@@ -1,0 +1,13 @@
+Solo pueden estar compuestos de 1s, 3s, 7s y 9s, con un 5 al principio tal
+vez. Pero en este último caso no puede haber 1s ni 7s (quedaria multiplo de
+3), y tampoco pueden seguirle mas de un 3 o 9 (quedaria multiplo de 3 al
+quitar el 5). 59 no vale así que ese caso sólo nos da el 53.
+
+Demás casos: formados por 1s, 3s, 7s, y 9s, com máximo dos 1s/7s (quedaría si
+no un múltiplo de 3). Esos dos 1s y 7s tienen que ser el segundo y penúltimo
+numeros necesariamente (o quedaría un múltiplo de 3, y sólo pueden tener un
+3 o 9 entre medias (o quedaría un múltiplo de 3). Ademán no puede empezar o
+acabar por 9.
+
+Tenemos por lo tanto una cota: 37973, y se puede aplicar la criba de
+erastótenes y resolver por fuerza bruta.

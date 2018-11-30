@@ -1,0 +1,46 @@
+Si aproximamos 3/7 por la izquierda con el método A/B < C/D => A/B < (A+B)/(C+D)
+< C/D, obtenemos 0/1, 3/8, 2/5, 5/12, 8/19, 11/26 ... y observamos que todas las
+fracciones generadas son propias y reducidas. Yo creo que la última con
+denominador menor que 1000000 es la buscamos.
+Veámoslo (para cualquier a/b, con mcd(a,b)=1, a<b):
+  Afirmamos que el metodo anterior desde 0/1 nos lleva
+    siempre a un c/d con c<a, d<b, ad-bc=1 (=> c/s<a/b) (1)
+  A partir de ahi, las fraciones resultantes seran (a+kc)/(b+kd),
+    cumplen ad'-bc'= 1, y afirmamos que siempre son reducidas (2)
+  Afirmamos que no hay ninguna fraccion e/f con b+kd < f < b+(k+1)d
+    mas proxima a a/b que (a+kc)/(b+kd) (3)
+
+Por lo tanto el algoritmo consiste en encontrar la identidad de bezout
+y encontrar trivialmente el maximo k permitido
+
+(1) Como mcd(a,b)=1, existe ! k<a tq kb+1=0 mod a => a|kb+1
+    La secuencia generada sera 0/1, a/b+1, 2a/2b+1, ..., (ja)/(jb+1)
+    Al llegar a j=k, cogemos c=k, d=(kb+1)/a. c<a, d<b, ad-bc=1.
+    El problema es que en el proceso ja/jb+1 podria haberse simplificado
+    por un factor menor que a. Pero en ese caso tambien se acaba llegando a
+    c/d. Veamoslo. Sea q el factor por el que se ha simplificado. q necesariamente
+    divide a a (si divide a jb+1, es necesariamente coprimo con j). Sea r = a/q,
+    a' = ja/q = jr, b' = (jb+1)/q. mcd(r,b)=1 ya que mcd (a,b)=1, y mcd(r,b')=1, o
+    la simplificacion por q no habria sido maxima. Entonces existe k'< r tq
+    b'+k'b = 0 mod r. Veamos que b'+k'b/r = (kb+1)/a, y que (a'+k'a)/r=k.
+    b'+k'b/r = [(jb+1)/q + k'b]/r = (jb+1+k'qb)/a = ((j+k'q)b+1)/a.
+    Si j+k'q < a, necesariamente k=j+k'q (recordamos que k es unico modulo a).
+    Pero j < q, o se habria simplificado por q en un j anterior, asi que
+    j+k'q < q + (r-1)q = rq = a. Por otro lado (a'+k'a)/r = j + k'a/r = j+k'q = k.
+    Se puede aplicar esta demostracion recursivamente para el caso de mas
+    simplificaciones intermedias
+    
+(2) Es trivial ver que la diferencia de productos sigue siendo 1, y si es asi c/d es
+    necesariamente irreducible, ya que si c y d tuviesen un factor k comun, esa
+    diferencia tendria que ser necesariamente divisible por k
+
+(3) Para empezar, es facil ver que si a<b, mcd(a,b)=1, ad-bc=1, entonces no existen
+    c',d' con d < d' < d+b, tq ad'-bc' = 1. Si lo hubiera, necesesariamente
+    c < c' < c+a => d'=d+k, c'=c+r, 0<k<b, 0<r<d => ad'-bc' = 1+ak-br = 1 <=>
+    ak=br. mcd(a,b)=1 => k|b, a|r, absurdo.
+    De igual manera, si a<b, mcd(a,b)=1, ad-bc=1, no existen c',d', con d<d'<d+b, tq
+    c/d < c'/d' < a/b. Si lo hubiera, necesariamente d'=d+k, c'=c+r, 0<k<b,0<r<a.
+    Multiplicando nos queda cd'/dd' < c'd/dd' < a/b => dd'a - bc'd < dd'a - bcd' =
+    d' = d+k => d(d'a-bc') = d(1+ka-br) < d+k => ka-br=0 (<0 => c'/d'>=a/b).
+    Pero igual que antes, esto es absurdo
+

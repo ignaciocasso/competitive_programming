@@ -1,0 +1,10 @@
+1º observación: el número de dígitos que se cambian debe ser múltiplo
+de 3, o siempre habra 3 números generados múltiplos de 3 y no se podrá llegar
+a 8
+
+2º observación: el último dígito no está entre los que se cambia
+
+Sabiendo esto, se pueden precalcular los primeros n primos, buscar los que
+tengan 3 0s, 3 1s o 3 2s, y comprobar si cumplen la propiedad. Teniendo en
+cueanta que la solución es 121313, sería suficiente con precalcular 10^6
+primos.

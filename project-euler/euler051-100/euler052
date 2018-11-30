@@ -1,0 +1,5 @@
+Fuerza bruta, sabiendo que las cifras del número están determinadas por la
+última (no se si vale repetir digitos), y que el primer dígito debe ser 1.
+También se puede recordar que la parte decimal de 1/7 = 142857 cumple esa
+propiedad, aunque aún así podría haber uno menor)
+Supongo que también se podrá resolver matemáticamente

@@ -1,0 +1,5 @@
+Si se tiene una cota se hace una criba de erastótenes y a partir de ella y los
+n primeros cuadrados una criba de goldbach. La solución es 5777, así que daría
+de sobra.
+No se como encontrar la cota, pero supongo que se puede empezar por una baja
+(y aún así mayor que 5777) y aumentarla dinámicamente.

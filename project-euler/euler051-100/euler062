@@ -1,0 +1,8 @@
+Me hago k árboles de profundidad 1,..,k donde cada nodo es un dígito y sus
+hijos los nodos de dígito mayor. Las hojas son conjuntos de números de k
+cifras. Voy calculando cubos, y para cada uno cojo su permutación ordenada,
+y lo inserto en el árbol correspondiente y en la hoja correspondiente a esa
+permutación. Al acabar cada k, recorro el árbol para ver si alguna hoja tiene
+exactamente 5 números. Entra de sobra. No se que quieren que se haga con ceros
+a la izquierda, pero se puede adaptar el programa sin problemas para cualquier
+caso

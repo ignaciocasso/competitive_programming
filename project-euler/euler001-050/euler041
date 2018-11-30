@@ -1,0 +1,4 @@
+sum 1..9 y sum 1..8 son múltiplos de 3, así que n=7 como máximo. Sabiendo
+esto criba de erastótenes es suficiente, aunque tal vez sea más corto
+comprobar si son primos a pelo empezando por arriba (es 7652413, el 14 intento
+contando algunos fallos triviales)

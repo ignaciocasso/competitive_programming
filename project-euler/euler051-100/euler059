@@ -1,0 +1,7 @@
+Hay 26^3 combinaciones para las claves, así que ver si el texto es inglés a
+ojo una vez generado para cada una de ellas no es una opción.
+No se que más pretenden que hagamos, se puede hacer un filtrador naive de
+textos que definitivamente no son ingles, o buscar caracteres frecuentes
+(espacio, a, e...) o palabras (the, and...). Se acabaría sacando, pero no es
+un algoritmo determinista como todos los que ha habido en project euler hasta
+ahora.

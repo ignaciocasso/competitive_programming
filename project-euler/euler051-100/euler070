@@ -1,0 +1,6 @@
+Podemos precaluclar la función phi para los primeros 10^7 números con un
+método parecido a la criba de Erastótenes. El array se inicializa a 1, y si
+al llegar a una posición el 1 sigue ahí, entonces el número es primo. Para
+cada primo, multiplicamos el valor de sus múltiplos por p-1, y luego por cada
+k, múltiplicamos el valor de los múltiplos de p^k por p.
+Una vez hecho esto, fuerza bruta

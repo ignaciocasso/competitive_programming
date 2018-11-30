@@ -1,0 +1,5 @@
+Fuerza bruta es suficiente.
+n=2 => 5000<=k<=9999
+n=3 => 333<k<500
+n=4 => 25<=k<=33
+n=5 => k=9 (los demas dan numeros menores)

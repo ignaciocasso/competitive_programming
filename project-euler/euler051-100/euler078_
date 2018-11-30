@@ -1,0 +1,4 @@
+El algorimo del ejercicio 76 y 78 ya no vale, es cuadratico en memoria
+y cubico en tiempo de ejecucion, y esta vez la solucion es 55374. He
+tenido que hacer trampas, y aparentemente no he sido el único. Todo el
+mundo ha usado la formula de euler (Wikipedia)

@@ -1,0 +1,3 @@
+Tantos como pares (a,n) haya, con a<10, a>=raiz n-esima de 10^(n-1)
+(a,n naturales, por supuesto). Se calculan todos por fuerza bruta, en cuanto
+no haya ninguno para cierto n tampoco lo habra para los mayores

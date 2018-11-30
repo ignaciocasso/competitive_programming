@@ -1,0 +1,3 @@
+If it's a 16 digit string, we now that the 10 is in the outer ring.
+We need to find solutions, and rearrange them to form a maximum string.
+Brute force is enough (in fact, I have implemented this one in ciao)

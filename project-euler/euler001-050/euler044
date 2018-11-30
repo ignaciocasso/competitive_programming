@@ -1,0 +1,7 @@
+Probably can be done with maths, but there's no need. Keep a growing list of
+pentagonal numbers, and for each one (in ascending order) try to find three
+pentagonal numbers in the list that fulfill the condition. Stop looking after
+pentagonal number n with (3n+1) > k, since that is the difference between
+Pn and Pn+1.
+D=5482660, N=1912, so if the inner loop is optimized it will be enough, and if
+you play a little with the formulas you will find good enough optimizations

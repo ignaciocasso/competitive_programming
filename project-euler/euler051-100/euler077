@@ -1,0 +1,5 @@
+Programacion dinamica, como el anterior, y con la misma observacion (hay que
+guardar una matriz y no un array, para no contar dos veces la misma particion)
+Se va creando un array de primos a medida que crece n, o se precalculan primos
+Como cota para la matriz y para la criba de Erastotenes si se hace, se puede
+probar sin mas, y se acierta a la primera porque la solucion es 71.

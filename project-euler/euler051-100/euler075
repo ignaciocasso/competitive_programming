@@ -1,0 +1,10 @@
+generamos ternas primitivas con pares (m,n), m>n>0, gcd(m,n)=1, 2|nm, a=m^2-n^2,
+b=2mn,c=m^2+n^2 (estos pares las generan todas, y solo esas)
+Calculamos la longitud total l de cada una (= 2m(m+n)), y apuntamos en un array
+cuantas hay para cada l.
+En otro array calculamos cuantas ternas no necesariamente primitivas hay para
+cada l (sumando array1[i] a array2[ki], k=1..)
+contamos cuantas tienen 1
+Para generar los pares (m,n), generamos fracciones n/m reducidas con
+denominador menor que sqrt(1500000/2) < 900, mediante sucesiones de farey
+(fuerza bruta tambien vale)

@@ -1,0 +1,4 @@
+Fuerza bruta es suficiente (con criterio, calculando solo la mitad y
+despejando antes de calcular).
+Saber fórmulas combinatorias y programación dinámica también ( (n,m) =
+(n-1,m)+(n-1,m-1) )

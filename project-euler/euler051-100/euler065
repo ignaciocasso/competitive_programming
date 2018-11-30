@@ -1,0 +1,6 @@
+Se recorre la lista de los 100 primeros de atras adelante y se va calculando
+la fracción. El único problema que puede haber es que los números crezcan
+demasiado como para caber en un entero (y de hecho lo hacen), así que hay que
+implementarse un biginteger. Las fracciones tiene pinta de que nunca van a ser
+simplificables, pero a las malas se comprueba. Seguro que se puede sacar la
+fórmula del término general, pero pa que

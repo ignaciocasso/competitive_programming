@@ -1,0 +1,4 @@
+Fuerza bruta entra.
+Optimizaciones: trabajar con numeros con digitos ordenados y contar
+permutaciones (0! = 1!, 0s a la izquierda no valen)
+Guardar soluciones en un array

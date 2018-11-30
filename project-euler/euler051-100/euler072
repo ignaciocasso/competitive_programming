@@ -1,0 +1,5 @@
+summatory of phi(i), i=2..1000000, phi euler's totient function
+An adapted Erastotenes sieve as the one in (70) allows us to compute all of
+them and then we only need to add.
+Better performance can we obtein with the formula n = sum phi(d), d|n, but
+I'm tired

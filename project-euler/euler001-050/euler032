@@ -1,0 +1,4 @@
+The product of two numbers of k1 and k2 digits has either k1+k2-1 or k1+k2
+digits. So we need to work only with two numbers of two and three digits
+as in the example or of 1 and 4 digits. Knowing this the problem can be
+bruteforced

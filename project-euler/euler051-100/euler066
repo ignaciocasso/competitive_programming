@@ -1,0 +1,16 @@
+Primer problema que no se puede resolver a la fuerza (con algunas
+optimizaciones no muy rebuscadas)
+Toca investigar: por lo visto la ecuacion de Pell (así se llama), tiene como
+solucion minima en x el numerador de una de las aproximaciones de sqrt(D) por
+el método de fracciones continuas, e y es el denominador correspondiente.
+Como además el numerador de estas aproximaciones siempre crece, pues el el
+primero que encuentres que lo cumpla.
+Sabiendo esto, fuerza bruta es suficiente (más big integer, más una
+implementación decente del cálculo de estas aproximaciones)
+
+Optimización interesante (posteada por marlin314):
+   -A/B < C/D => A/B < (A+B)/(C+D) < C/D
+   - Si usas este método para aproximar un número real empezando con 0/1 y 1/0
+(= infinito), todas las convergentes de la fracción continua del número real
+aparecen en el proceso, y aparecen en los "puntos de inflexión" en los que se
+pasa de ajustar un extremo a ajustar otro

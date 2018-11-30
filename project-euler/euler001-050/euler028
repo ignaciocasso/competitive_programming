@@ -1,0 +1,4 @@
+Las esquinas de una matriz nxn de ese tipo, con n impar, son n^2, n^2-(n-1),
+n^2-2(n-1), n^2-3(n-1), que suman 4*n^2-6*(n-1). Se aplica la formula de
+sum n^2, que si no se sabe se puede sacar sabiendo que es un polinomio de
+grado 3, o se calcula linearmente sin mas

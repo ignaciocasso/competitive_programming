@@ -1,0 +1,2 @@
+Implementacion naive the big integer + fuerza bruta es suficiente
+(aprovechando el cálculo de a^b, para el de a^b+1, obviamente)

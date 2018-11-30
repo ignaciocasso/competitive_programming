@@ -1,0 +1,23 @@
+Los 5 números tienen que ser iguales modulo 3 (si el 3 está entre ellos no
+cuenta), porque si no al concatenar dos quedaría un múltiplo de 3 (fácil de
+ver, trabajando con p1*10^k + p2). Así que se puede partir por la mitad el
+problema.
+Yo precalcularía primos hasta una cota, para cada mitad vería si cumplen la
+condición dos a dos guardando el resultado en un grafo, y buscaría 5 que
+formasen un subgrafo completo. Para esto último probablemente haya algoritmos
+interesantes.
+Pero como el resultado es 26033, no creo que hagan falta. Eso sí, por primera
+vez habrá que usar una estructura de datos algo más compleja, que para cada
+primo permita acceder directamente a los que pueden ir con él. Una simple
+matriz de adyacencia no basta.
+Así que en resumen, precalcularía los N primeros primos hasta una cota
+arbitraria (si no es suficiente, volvería a empezar con una mayor), los
+compararía dos a dos, viendo si la concatenación es prima por el metodo
+usual (los primos hasta la raiz estarán ya todos precalculados), y guardando
+para cada uno los que son compatibles con el, y una matriz de adyacencia
+aparte, y buscaría soluciones.
+La búsqueda se puede llevar a cabo de de forma directa, o buscando
+sucesivamente tríos, cuartetos, y quintetos, pero creo que lo último no
+mejora nada llegados a este punto, tal vez sí con otra representación de los
+datos. La búsqueda directa, por supuesto, solo explora quintetos ordenados,
+y se hace en orden más o menos creciente de la suma de los primos

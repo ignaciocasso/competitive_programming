@@ -1,0 +1,6 @@
+4 números seguidos no pueden compartir primos, excepto el 2 y el 3. Uno de
+ellos será múltiplo de 4 y el otro no, así que el 2 no nos preocupa. De lo
+único que hay que asegurarse es de que sólo haya un múltiplo de 3, o si hay dos
+que uno sea múltiplo de 9. Así que buscamos 4 números consecutivos, que tengan
+(exactamente?) cuatro divisores primos y que cumplan esa restricción. Una criba
+de erastótenes adaptada es suficiente.

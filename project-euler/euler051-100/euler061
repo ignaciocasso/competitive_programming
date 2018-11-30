@@ -1,0 +1,16 @@
+Es curiosa la relación entre esta clase de números (las listas equidistan
+de la anterior y la siguiente), nunca lo había notado.
+En cualquier caso, es fácil ver en qué rangos puede estar n para que
+P1,n tenga cuatro cifras, y también la diferencia entre un número triangular/
+cuadrado/pentagonal... y el siguiente en función de n, y se ve que en esos
+rangos la diferencia es casi siempre mayor que 100. A donde quiero llegar,
+es que sabiendo las dos primeras cifras de un número de ese tipo que se sabe
+que tiene cuatro, hay como mucho dos posibilidades, y el método de búsqueda
+evidente para este problema no se va a bifurcar tanto como para resultar
+exponencial. Por cada número triangular inicial, hay como mucho 2^5, caminos,
+así que fuerza bruta es más que suficiente
+
+Olvida lo que he dicho, no tienen que estar en orden. Aún así, sigue
+entrando. Por cada número triangular inicial (puedes empezar el ciclo donde
+quieras, ya se ordenará después), hay como mucho 5*2 * 4*2 * 3*2 *2*2 caminos
+posibles, = 120*16, y fuerza bruta sigue siendo suficiente

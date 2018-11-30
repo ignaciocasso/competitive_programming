@@ -1,0 +1,4 @@
+- Euler's totient function is multiplicative
+- phi(p^k) = p^k-p^(k-1) => p^k/phi(p^k) = p/(p-1), which doesn't depend on k
+and tends to 1
+Therefore, the solution will 2*3*5*7..., until we reach 1000.000

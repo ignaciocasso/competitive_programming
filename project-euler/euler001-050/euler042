@@ -1,0 +1,2 @@
+Fuerza bruta da de sobra, usando alguna implementacion naive para ver si un
+numero es triangular (T(floor(sqrt(2n)))=n)
